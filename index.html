@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENovel</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="nav">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo-02.png" alt=""></a>
+            </div>
+
+            <div class="links">
+               <div class="navbutton"><a href="#">POST A BOOK</a></div>
+               <div class="crt">
+                <div class="img"><a href="#"><img src="images/cart.png" alt=""></a></div>
+                <div class="num"><p>10</p></div>
+                </div>
+              <div class="imgbutton"> <a href="#"><img src="images/profile-03.png" alt=""></a></div>
+            </div>
+
+            <div class="navb" id="navbutton">
+                <div class="line" id="one"></div>
+                <div class="line" id="two"></div>
+                <div class="line" id="three"></div>
+            </div>
+        </div>
+
+        <!-------------------------------- imput area ------------------------>
+
+        <div class="inputarea">
+            <div class="radios">
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" name="choose" id=""> All
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" name="choose" id=""> Owned
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="">
+                        <input type="radio" name="choose" id=""> Favorites
+                    </label>
+                </div>
+               
+            </div>
+            <div class="searchbox">
+                <form class="example">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                
+            </div>
+
+        </div>
+
+        <!-------------------------------- book area ------------------------>
+        
+        
+        <div class="bookarea">
+            <h1>books</h1>
+            
+             <div class="books">
+                <div class="book">
+                    <div class="bookcard">
+                        <img src="images/book.jpg" alt="">
+                        <div class="namear">
+                            <div>
+                                <h3>Controlled wom</h3>
+                                <p>auther name</p>
+                            </div>
+                            <div>
+                                <button onclick="changecolor()"><i class="fa fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="starar">
+                            <div class="stars">
+                                <div class="star"><p>&#9733;</p></div> 
+                                <div class="star"><p>&#9733;</p></div> 
+                                <div class="star"><p>&#9733;</p></div> 
+                                <div class="star"><p>&#9733;</p></div> 
+                                <div class="star"><p>&#9734;</p></div> 
+                                
+                            </div>
+                            <div class="price">
+                                <p>RS200</p>
+                            </div>
+
+                            <div class="btn">
+                                <button>Add To Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="book">
+                    <div class="bookcard">
+                    <img src="images/book.jpg" alt="">
+                    <div class="namear">
+                        <div>
+                            <h3>Controlled wom</h3>
+                            <p>auther name</p>
+                        </div>
+                        <div>
+                           <button onclick="changecolor()"><i class="fa fa-heart"></i></button>
+                        </div>
+                    </div>
+                    <div class="starar">
+                        <div class="stars">
+                            <div class="star"><p>&#9733;</p></div> 
+                            <div class="star"><p>&#9733;</p></div> 
+                            <div class="star"><p>&#9733;</p></div> 
+                            <div class="star"><p>&#9733;</p></div> 
+                            <div class="star"><p>&#9734;</p></div> 
+                            
+                        </div>
+                        <div class="price">
+                            <p>RS200</p>
+                        </div>
+
+                        <div class="btn">
+                            <button>Add To Cart</button>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+         </div>
+        
+
+
+    </div>
+
+
+    <script>
+        var nav = document.getElementById('navbutton')
+        var  one= document.getElementById('one')
+        var  two= document.getElementById('two')
+        var three = document.getElementById('three')
+        var line = false
+
+        nav.addEventListener('click' , () => {
+            if(line){
+            one.classList.remove('one')
+            two.classList.remove('two')
+            three.classList.remove('three')
+            console.log('line')
+            line =false
+        }else{
+            one.classList.add('one')
+            two.classList.add('two')
+            three.classList.add('three')
+            console.log('cross')
+            line =true
+            }
+            
+        })
+
+        function changecolor(){
+            this[0].style.color = red
+
+        }
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,335 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.box {
+    background-color: rgb(69, 69, 61);
+    margin: 3px;
+}
+
+body {
+    background-color: rgb(26, 24, 24);
+}
+
+
+@media all and (max-width : 900px) {
+    .links {
+        display: none;
+    }
+
+    .navb {
+        display: flex;
+    }
+}
+
+.navb {
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media all and (min-width : 900px) {
+    .links {
+        display: flex;
+    }
+
+    .navb {
+        display: none;
+    }
+}
+
+.line {
+    height: 5px;
+    width: 50px;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: transform 500ms ease;
+}
+
+.one {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 30px;
+    margin-top: 0;
+
+}
+
+.three {
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 30px;
+
+
+}
+
+.two {
+    display: none;
+}
+
+
+
+.wrapper {
+    background-color: rgb(10, 10, 10);
+    margin: auto;
+
+}
+
+.nav {
+    background-color: rgb(25, 18, 18);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin: 10px 20px;
+
+}
+
+.links {
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.links div,
+.links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.imgbutton img {
+    height: 55px;
+}
+
+.navbutton a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(3, 176, 92);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.crt {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+.crt .img a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.num {
+
+    position: relative;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    left: 30px;
+    top: -50px;
+    background-color: aqua;
+}
+
+.num p {
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.img a img {
+    display: inline-block;
+    height: 30px;
+}
+
+/************* input area ***************8888888888888888888888888888888888888888888888888***/
+
+
+
+.inputarea {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: blueviolet;
+}
+
+.searchbox {
+    background-color: rgb(101, 53, 146);
+    flex: 1;
+}
+
+.radios {
+    min-width: 375px;
+    flex: 1;
+    display: flex;
+}
+
+.radio {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio label {
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+
+.example {
+    padding: 1rem 0;
+    min-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.example input {
+    height: 30px;
+    width: 80%;
+    border-radius: 30px 0 0 30px;
+    padding-left: 20px;
+    border: none;
+    outline-width: 0;
+}
+
+.example button i {
+    color: blue;
+}
+
+.example button {
+    height: 30px;
+    width: 50px;
+    border-radius: 0 30px 30px 0;
+    border: none;
+}
+
+/************* filtered book area ******************/
+
+.bookarea {
+
+    padding-top: 1vh;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.books {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.book {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.bookcard {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: rgb(69, 69, 69);
+    border-radius: 0 0 10px 10px;
+
+}
+
+.bookcard img {
+    height: 300px;
+}
+
+.namear {
+    display: flex;
+    justify-content: center;
+
+}
+
+.namear button {
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    margin: 10px;
+    border: none;
+    padding: 2px 0 0 20px;
+}
+
+.namear div {
+    padding: 0 5%;
+    margin-top: 1vh;
+    display: inline-block;
+}
+
+.namear div i {
+    font-size: 25px;
+    text-align: center;
+}
+
+.starar {
+    display: inline-block;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.star {
+    display: inline-block;
+}
+
+.star p {
+    display: inline-block;
+    font-size: 22px;
+    color: aquamarine;
+}
+
+.price {
+    padding-left: 20px;
+}
+
+.price,
+.price p {
+    display: inline-block;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button {
+    border: none;
+    margin: 10px 0 20px 0;
+    background-color: green;
+    color: white;
+    font-size: 19px;
+    height: 30px;
+    width: 80%;
+    border-radius: 5px;
+}
