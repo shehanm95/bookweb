@@ -181,7 +181,7 @@ body {
 }
 
 .radios {
-    min-width: 375px;
+    min-width: 360px;
     flex: 1;
     display: flex;
 }
@@ -202,7 +202,7 @@ body {
 
 .example {
     padding: 1rem 0;
-    min-width: 380px;
+    min-width: 360px;
     display: flex;
     justify-content: center;
     align-items: center;
